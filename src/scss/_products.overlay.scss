@@ -1,0 +1,85 @@
+.modal_overlay {
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.768627);
+    z-index: 20;
+    transition: .6s opacity , visibility , transform;
+    .products_modal {
+        .exit_btn {
+            position: fixed;
+            top: 25px;
+            right: 25px;
+            cursor: pointer;
+            img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+        padding: 61px 53px;
+        width: 950px;
+        height: 643px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        background: #F7F7F7;
+        box-shadow: 5px 6px 6px rgba(0, 0, 0, 0.0784314);
+        display: flex;
+        flex-direction: column;
+        .item_1 {
+            display: flex;
+            img {
+                margin-right: 30px;
+                width: 254px;
+                height: 254px;
+            }
+            .content {
+                h3 {
+                    margin-top: 13px;
+                    font-weight: 700;
+                    font-size: 25px;
+                    line-height: 30px;
+                    color: #3E3737;
+                
+                    position: relative;
+                }
+                .price {    
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 34px;
+                    color: #91B40D;
+
+                    &::after {
+                        content: url('../icon/azn.svg') ;
+                        margin-left: 5px;
+                    }
+                }
+                .text {
+                    margin-top: 5px;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #7C7A7A;
+
+                }
+            }
+        }
+        .item_2 {
+            margin-top: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+.active {
+    opacity: 1;
+    visibility: visible;
+}

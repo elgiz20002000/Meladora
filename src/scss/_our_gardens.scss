@@ -1,0 +1,70 @@
+.our_gardens {
+    padding-top: 60px;
+    position: relative;
+    &::after {
+        content: url('../icon/logo_bg.svg');
+        position: absolute;
+        bottom: -25%;
+        left: 0;
+    }
+    h2 {
+        text-align: center;
+    }
+    .list_line {
+        margin-top: 18px;
+    }
+    img[alt=garden_bg] {
+            position: absolute;
+            bottom: 5%;
+            left: 48%;
+            transform: translateX(-50%);
+            z-index: -10;
+    }
+    .gardens_list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      
+        .item {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            .number {
+                font-weight: 400;
+                font-size: 120px;
+                line-height: 145px;
+                text-align: left;
+                color: #918F8F;
+            }
+            h3 {
+                margin-top: 21px;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 36px;
+                color: #5F5C5C;
+            }
+            .description {
+                margin-top: 11px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #7C7A7A;
+                text-align: left;
+            }
+            img {
+                margin-top: 10px;
+                width: 320px;
+                height: 400px;
+            }
+            &:nth-last-child(2){
+                flex-direction: column-reverse;
+                align-items: center; 
+                h3 , .number {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
+}

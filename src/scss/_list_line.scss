@@ -1,0 +1,29 @@
+.list_line {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::before {
+        content: url('../icon/line_left.svg') ;
+
+
+    }
+    &::after {
+        content: url('../icon/line_right.svg') ;
+
+    }
+}
+
+.big {
+    &::before {
+        content: url('../icon/line_left_big.svg') ;
+        margin-right: 15px;
+
+
+    }
+    &::after {
+        content: url('../icon/line_right_big.svg') ;
+        margin-left: 15px;
+
+    }
+}

@@ -1,0 +1,95 @@
+.our_products {
+    padding-top: 146px;
+    position: relative;
+    &::after {
+        content: url('../icon/logo_bg_full.svg');
+        position: absolute;
+        bottom: -20%;
+        right: 0;
+        z-index: -20;
+    }
+    h2 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        color: #2A332B;
+    }
+    .list_line {
+        margin-top: 19px;
+    }
+    .products_filter {
+        margin-top: 37px;
+        .filter_elements {
+            color: #2A332B;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .item {
+                margin-right: 30px;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 27px;
+                cursor: pointer;
+                &:hover {
+                    color: #91B40D;
+                }
+            }
+        }
+        .products_list {
+            margin-top: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items:center;
+            .products_item {
+                position: relative;
+                width: 200px;
+                min-height: 230px;
+                cursor: pointer;
+                &:hover {
+                    box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.0784314);
+                    border-radius: 5px;
+                }
+                img {
+                    width: 199px;
+                    height: 200px;
+                    z-index: 0;
+                    position: absolute;
+                    top: 0;
+                }
+              .products_info {
+                position: absolute;
+                bottom: 0;
+                background-color: white;
+                z-index: 1;
+                text-align: center;
+                width: 182px;
+                height: 74px;
+                box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.0784314);
+                border-radius: 5px;
+                h3 {
+                    font-weight: 700;
+                    font-size: 25px;
+                    line-height: 30px;
+                    color: #3E3737;
+                }
+                .price {
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 34px;
+                    color: #91B40D;
+                    &::after{
+                        content: url('../icon/azn.svg');
+                    }
+                }
+              }
+            }
+        }
+    }
+}
+
+.selected {
+    color: #91B40D;
+}

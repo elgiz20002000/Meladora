@@ -1,0 +1,46 @@
+.who_we {
+    margin-top: 45px;
+    position: relative;
+    &::before {
+        content: url('../icon/logo_bg.svg');
+        position: absolute;
+        left: 0;
+        top: 1%;
+        z-index: -10;
+    }
+    &::after {
+        content: url('../icon/header_1_g.svg');
+        position: absolute;
+        right: 20%;
+        bottom: 14%;
+        z-index: -10;
+    }
+    h2 {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        color: #3E3737;
+        margin-left: 9%;
+    }
+}
+.left {
+    margin-right: 41px;
+}
+.content {
+    display: flex;
+    margin-top: 55px;
+    .description {
+        margin-top: 47px;
+        text-align: center;
+    }
+    .list_line {
+        margin-top: 12px;
+    }
+    .qualities {
+        margin-top: 21px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items:center;
+        text-align: center;
+    }
+}

@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond';
+    font-weight: 400;
+}
+html , body {
+    overflow-x: hidden;
+}
+
+.menu_btn {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin:  0 auto;
+    padding: 0 100px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    ul {
+        display: flex;
+        li {
+            list-style-type: none;
+            margin-right: 33px;
+            cursor: pointer;
+            a {
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 27px;
+                color: #FFFFFF;
+                text-decoration: none;
+                &:hover {
+                    color:#91B40D;
+                }
+            }
+        }
+    }
+}
+
+.selected_item {
+    color:#91B40D;
+}
+
+@import './list_line';
+@import '../universal/second_header';
+@import '../universal/second_footer';
+@import '../universal/menu_overlay';
+@import './top_btn';
+@import '../universal/search_overlay'; 
+
+
+
+
+.services {
+    margin-top: 47px;
+    position: relative;
+    &::before {
+        content: url('../icon/logo_bg.svg');
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -10;
+    }
+    .service_list {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        .item {
+            margin-top: 73px;
+            img[alt=service] {
+                width: 100%;
+                height: 100%;
+            }
+            &:nth-child(2) {
+                flex-direction: row-reverse;
+                .content {
+                    margin-right: 0;
+                    margin-left: 78px;
+                    text-align: right;
+                }
+            }
+            .content {
+                margin-right: 78px;
+                h2 {
+                    margin-top: 23px;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 24px;
+                    color: #1A5221;
+                }
+                .text {
+                    margin-top: 25px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #7C7A7A;
+                }
+            }
+        }
+    }
+    h1 {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        color: #3E3737;
+    }
+    .item {
+        display: flex;
+    }
+}
+
+
+
+@media (max-width:1199px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    nav {
+        ul {
+            li {
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width:991px) {
+
+    .services {
+        h1 {
+            text-align: center;
+        }
+        .service_list {
+            margin-top: 0;
+            .item {
+                flex-direction: column-reverse !important;
+                padding: 0 10%;
+                .content {
+                    margin: 0;
+                    margin-left: 0 !important;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    .logo_part nav {
+        align-items: center;
+        ul {
+            display: none;
+        }
+    }
+    .search_btn {
+        margin-right: 30px;
+    }
+    .menu_btn {
+        display: block;
+    }
+    .right {
+        display: none;
+    }
+    .left {
+        width: 100%;
+        .description {
+            padding: 0 10%;
+        }
+    }
+}
+
+
+@media (max-width:767px) {
+  
+   
+    .container {
+        padding: 0 20px;
+    }
+
+
+    .footer_items {
+        width: 100%;
+        .item {
+            width: 100%;
+            &:nth-child(1) {
+                margin-right: 30px;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@media (max-width:575px) {
+
+    .services .service_list .item {
+            padding: 0;
+    }
+
+    header .promo_bg::after {
+        display: none;
+    }
+  
+
+
+    .container {
+        padding: 0 10px;
+    }
+    .upper_part .social_item {
+        margin-right: 10px;
+    }
+
+
+
+    footer {
+        .item {
+            font-size: 16px;
+            margin-right: 10px;
+            justify-content: space-between;
+            h3 {
+                font-size: 18px;
+            }
+            &:nth-child(1) {
+                display: none;
+            }
+        }
+    }
+}
+

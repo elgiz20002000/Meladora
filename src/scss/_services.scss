@@ -1,0 +1,35 @@
+.services   {
+    text-align: center;
+    margin-top: 67px;
+    h2 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        color: #2A332B;
+    }
+    .list_line {
+        margin-top: 19px;
+    }
+    .service_list {
+        margin-top: 41px;
+        display: flex;
+        .item {
+            text-align: left;
+            h3 , .description {
+                margin-top: 25px;
+            }
+            h3 {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 24px;
+                color: #1A5221;
+            }
+            .description {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #7C7A7A;
+            }
+        }
+    }
+}

@@ -1,0 +1,126 @@
+@media (max-width:1199px) {
+    .container {
+        padding: 0 30px;
+    }
+    .services .service_list .item {
+        margin-right: 15px;
+    }
+    .galery .galery_list .item {
+        width: 31%;
+        a {
+            img {
+                width: 100%;
+            }   
+        }
+    }
+    nav {
+        ul {
+            li {
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width:991px) {
+    .logo_part nav {
+        align-items: center;
+        ul {
+            display: none;
+        }
+    }
+    .search_btn {
+        margin-right: 30px;
+    }
+    .menu_btn {
+        display: block;
+    }
+    .right {
+        display: none;
+    }
+    .left {
+        width: 100%;
+        .description {
+            padding: 0 10%;
+        }
+    }
+}
+
+
+@media (max-width:767px) {
+    .container {
+        padding: 0 20px;
+    }
+    .services {
+        .service_list {
+            flex-direction: column;
+            padding: 0 15%;
+            .item {
+                margin-top: 30px;
+                margin-right: 0;
+                text-align: center;
+            }
+        }
+    }
+    .galery .galery_list {
+        height: auto;
+        min-height: 800px;
+        flex-direction: column;
+        padding: 0 10%;
+        .item {
+            width: 100%;
+            margin-top: 10%;
+        }
+    }
+    .footer_items {
+        width: 100%;
+        .item {
+            width: 100%;
+            &:nth-child(1) {
+                margin-right: 30px;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width:575px) {
+    .content .description {
+        margin-top: 0;
+    }
+    header {
+        .promo_bg {
+            &:after {
+                display: none;
+            }
+        }
+    }
+    .container {
+        padding: 0 10px;
+    }
+    .upper_part .social_item {
+        margin-right: 10px;
+    }
+    .qualities {
+        flex-direction: column;
+        .item {
+            margin-top: 20px;
+        }
+    }
+
+    footer {
+        .item {
+            font-size: 16px;
+            margin-right: 10px;
+            justify-content: space-between;
+            h3 {
+                font-size: 18px;
+            }
+            &:nth-child(1) {
+                display: none;
+            }
+        }
+    }
+}

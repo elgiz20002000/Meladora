@@ -1,0 +1,131 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        li {
+            list-style-type: none;
+            margin-right: 5px;
+            a {
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 27px;
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+header {
+    position: relative;
+    padding-top: 12px;
+    min-height: 630px;
+    width: 100%;
+    color: #3E3737;
+    .promo_bg {
+        margin-top: 18px;
+        width: 100%;
+        height: 100vh;
+        background: url('../img/second_header_bg.webp') center center / cover no-repeat;
+        position: relative;
+        &::after {
+            content: url('../icon/second_header_icon.svg');
+            position: absolute;
+            bottom: -10%;
+            right: 10%;
+        }
+    }
+    .social_item {
+        &:hover {
+            path {
+                fill:#91B40D;
+            }
+        }
+    }
+}
+
+.upper_part {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #C7C7C7;;
+    display: flex;
+    justify-content: space-between;
+    .social {
+        display: flex;
+        &_item {
+            margin-right: 15px;
+        }
+    }
+    .tel {
+        a {
+            font-size: 16px;
+            line-height: 19px;
+            color: #3E3737;
+            text-decoration: none;
+        }
+        &::before {
+            content: url('../icon/phone.svg');
+            margin-right: 7px;
+
+        }
+    }
+}
+
+.logo_part {
+    padding-top: 27px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .search_btn {
+        cursor: pointer;
+    }
+    nav {
+        align-items: center;
+        ul {
+            li {
+                cursor: pointer;
+                position: relative;
+                padding: 12px 28px 13px 31px;
+                border-radius: 5px;
+                z-index: 1;
+
+                a {
+                    color: #3E3737;
+                }
+                &:hover {
+                    background: #91B40D;
+                    &::after {
+                        content: url('../icon/list_dark.svg');
+                        position: absolute;
+                        bottom:0;
+                        right: 0;
+                        z-index: -10;
+                    }
+                    a {
+                        color: white !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.selected {
+        background: #91B40D;
+    &::after {
+        content: url('../icon/list_dark.svg');
+        position: absolute;
+        bottom:0;
+        right: 0;
+        z-index: -10;
+    }
+    a {
+        color: white !important;
+    }
+}
+
+
+

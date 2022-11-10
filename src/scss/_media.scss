@@ -1,0 +1,169 @@
+@media (max-width:1200px) {
+    .container {
+        padding: 0 20px;
+    }
+    .who_are_we .right .description  {
+        width: 600px;
+
+    }
+    .who_are_we .left {
+        width: 38%;
+    }
+    .blogs .blogs_list {
+        .item {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .our_gardens .gardens_list .item img {
+        width: 250px;
+        height: 350px;
+    }
+    .lower_part_items {
+        padding-left: 10%;
+    }
+
+    .lower_part_items .item h2 {
+        font-weight: 700;
+        font-size: 40px;
+    }
+}
+
+@media (max-width:992px) {
+    .who_are_we {
+        .left {
+            display: none;
+        }
+        .right {
+            width: 100%;
+        }
+    }
+    .our_gardens .gardens_list {
+        flex-wrap: wrap;
+        .item {
+            max-width: 320px;
+        }
+    }
+    .logo_part nav ul li {
+        margin-right: 10px;
+        a {
+            font-size: 18px;
+        }
+    }
+    .lower_part_items .item  {
+        overflow: hidden;
+    }
+
+}
+
+@media (max-width:768px) {
+    .logo_part .search_btn {
+        margin-right: 30px;
+    }
+    .menu_btn {
+        display: block;
+    }
+    nav {
+        align-items:center ;
+    }
+    .who_are_we .right .description {
+        width: 90%;
+    }
+    .logo_part nav ul {
+        display: none;
+    }
+
+    .our_gardens .gardens_list {
+        justify-content: center;
+        flex-direction: column;
+        .item {
+            img {
+                width: auto;
+                height: auto;
+            }
+        }
+    }
+    .our_gardens .gardens_list .item:nth-last-child(2) {
+        flex-direction: column;
+    }
+
+    .our_products .products_filter .products_list {
+        justify-content: center;
+    }
+
+    .blogs .blogs_list {
+        padding: 10%;
+        flex-wrap: wrap;
+        .item {
+            margin: 0;
+            margin-top: 30px;
+
+        }
+    }
+
+    .footer_items {
+        .item {
+            width: 100%;
+            margin-right: 10px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@media (max-width:576px) { 
+    .who_are_we  {
+        height: 75em;
+        .right {
+            .description {
+                height: 100%;
+            }
+        }
+        .qualities {
+            flex-direction: column;
+            .item {
+                margin-top: 15px;
+            }
+        }
+    }
+    .container {
+        padding: 0 10px;
+    }
+    .blogs .blogs_list {
+        padding: 0;
+    }
+    .our_products .products_filter .filter_elements .item {
+        margin-right: 5px;
+        font-size: 18px;
+    }
+
+
+    .our_gardens .gardens_list {
+        .item {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .list_line.big {
+        display: none;
+    }
+    .upper_part .social_item {
+        margin-right: 7px;
+    }
+    .lower_part_items {
+        .item img {
+            width: 150px;
+        }
+    }
+    .lower_part_items .item_2 img {
+        width: 200px;
+    }
+    .lower_part_items .item_3 img {
+        width: 250px;
+    }
+}
