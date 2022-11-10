@@ -8,30 +8,28 @@ products_items = document.querySelectorAll('.products_item') ,
 filter_elements = document.querySelectorAll('.filter_elements .item')
 
 if(filter_elements) {
-    
-    if(screen.width < 1200 && screen.width > 768) {
-        $('.lower_part_items').slick({
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-          });
-    } else if(screen.width <= 768) {
-        $('.lower_part_items').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-          });
-    } 
-    else {
         $('.lower_part_items').slick({
             slidesToShow: 3,
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 2000,
+            responsive: [
+                {
+                  breakpoint: 1200,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true
+                  }
+                },
+                {
+                  breakpoint: 768,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
+                }]
           });
-    }
 
     filter_elements.forEach(item => {
         item.addEventListener('click' , (e) => {
