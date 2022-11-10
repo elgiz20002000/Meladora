@@ -5,9 +5,9 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+    mybutton.style.opacity = 1
   } else {
-    mybutton.style.display = "none";
+    mybutton.style.opacity = 0
   }
 
   mybutton.addEventListener('click' , () =>  {
